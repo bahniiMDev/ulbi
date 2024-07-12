@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  gap: 6px;
+  margin: 24px auto 0 auto;
+
+  .stream {
+    color: var(--theme-gray);
+    font-weight: 300;
+  }
+
+  .bet {
+    color: var(--theme-primary);
+    font-weight: 600;
+  }
+}

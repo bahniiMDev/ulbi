@@ -1,0 +1,26 @@
+@import 'vars/global';
+@import 'reset';
+@import 'theme/default';
+@import 'theme/purple';
+
+.app {
+  font-size: var(--font-size-m);
+  line-height: var(--font-line-m);
+  font-family: var(--font-family-main), serif;
+  color: var(--primary-color);
+  background-color: var(--theme-bg);
+  min-height: 100dvh;
+  font-weight: 400;
+
+
+  display: flex;
+  .content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+* {
+  transition: ease .5s;
+  transition-property: color, background-color;
+}

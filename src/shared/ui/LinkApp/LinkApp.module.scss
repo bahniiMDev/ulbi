@@ -1,0 +1,25 @@
+.link {
+  text-decoration: none;
+}
+
+.active {
+  background: rgb(8,136,210);
+  background: -moz-linear-gradient(90deg, rgba(8,136,210,0.5) 0%, rgba(8,136,210,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(8,136,210,0.5) 0%, rgba(8,136,210,0) 100%);
+  background: linear-gradient(90deg, rgba(8,136,210,0.5) 0%, rgba(8,136,210,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0888d2",endColorstr="#0888d2",GradientType=1);
+  transition: background-color ease .2s;
+  color: var(--theme-text-white);
+  position: relative;
+}
+.active:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  left: 0;
+  top: 0;
+  background-color: var(--blue);
+}
+
+
