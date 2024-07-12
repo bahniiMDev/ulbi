@@ -1,8 +1,7 @@
-@import 'vars/global';
-@import 'reset';
-@import 'theme/default';
-@import 'theme/purple';
-
+@import "vars/global";
+@import "reset";
+@import "theme/default";
+@import "theme/purple";
 .app {
   font-size: var(--font-size-m);
   line-height: var(--font-line-m);
@@ -11,8 +10,6 @@
   background-color: var(--theme-bg);
   min-height: 100dvh;
   font-weight: 400;
-
-
   display: flex;
   .content {
     padding: 12px;
@@ -21,6 +18,6 @@
   }
 }
 * {
-  transition: ease .5s;
+  transition: ease 0.5s;
   transition-property: color, background-color;
 }

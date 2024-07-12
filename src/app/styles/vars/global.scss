@@ -1,38 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 //@import url('https://fonts.cdnfonts.com/css/zona-pro');
 @font-face {
-  font-family: 'Zona pro';
-  src: url(shared/assets/fonts/ZonaPro-Light.woff2) format("woff2");
+  font-family: "Zona pro";
+  src: url("shared/assets/fonts/ZonaPro-Light.woff2") format("woff2");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Zona pro';
-  src: url(shared/assets/fonts/ZonaPro-Regular.woff2) format("woff2");
+  font-family: "Zona pro";
+  src: url("shared/assets/fonts/ZonaPro-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Zona pro';
-  src: url(shared/assets/fonts/ZonaPro-SemiBold.woff2) format("woff2");
+  font-family: "Zona pro";
+  src: url("shared/assets/fonts/ZonaPro-SemiBold.woff2") format("woff2");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Zona pro';
-  src: url(shared/assets/fonts/ZonaPro-Bold.woff2) format("woff2");
+  font-family: "Zona pro";
+  src: url("shared/assets/fonts/ZonaPro-Bold.woff2") format("woff2");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Zona pro';
-  src: url(shared/assets/fonts/ZonaPro-ExtraBold.woff2) format("woff2");
+  font-family: "Zona pro";
+  src: url("shared/assets/fonts/ZonaPro-ExtraBold.woff2") format("woff2");
   font-weight: 600;
 }
-
-
 :root {
-  --font-family-main: 'Zona pro', sans-serif;
+  --font-family-main: "Zona pro", sans-serif;
   --font-size-m: 14px;
   --font-line-m: 22px;
   --font-m: var(--font-size-m) / var(--font-line-m) / var(--font-family-main);
@@ -40,14 +39,12 @@
   --font-line-l: 28px;
   --font-l: var(--font-size-l) / var(--font-line-l) / var(--font-family-main);
 
-
   //colors
   --blue: #0888d2;
   --black: #10131e;
   --black-light: #1a1e2d;
-  --white: #ffffff;
+  --white: #fff;
   --gray: #64646a;
-
 
   //sizes
   --width-sidebar-small: 60px;

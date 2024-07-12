@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Theme, useThemeContext } from 'app/providers/ThemeProvider';
 import { ButtonApp, ThemeButton } from 'shared/ui/ButtonApp/ButtonApp';
 import { useTranslation } from 'react-i18next';
@@ -13,7 +11,7 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
 
   return (
     <ButtonApp className={className} onClick={toggleTheme} theme={ThemeButton.PRIMARY}>
-      {theme === Theme.DEFAULT ? t('default') : t('dark')}
+      {theme === Theme.DEFAULT ? t('default') : t('purple')}
     </ButtonApp>
   );
 }
