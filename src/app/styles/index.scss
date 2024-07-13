@@ -6,15 +6,21 @@
   font-size: var(--font-size-m);
   line-height: var(--font-line-m);
   font-family: var(--font-family-main), serif;
-  color: var(--primary-color);
+  color: var(--theme-primary);
   background-color: var(--theme-bg);
   min-height: 100dvh;
   font-weight: 400;
+  width: 100%;
   display: flex;
   .content {
     padding: 12px;
     display: flex;
+    flex: 1 auto;
     flex-direction: column;
+  }
+  .wrapper-pages {
+    width: 100%;
+    height: 100%;
   }
 }
 * {

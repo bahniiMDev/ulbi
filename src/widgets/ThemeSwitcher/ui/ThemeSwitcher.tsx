@@ -7,7 +7,7 @@ type ThemeSwitcherProps = {
 };
 export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
   const { theme, toggleTheme } = useThemeContext();
-  const { t } = useTranslation();
+  const { t } = useTranslation('settings');
 
   return (
     <ButtonApp className={className} onClick={toggleTheme} theme={ThemeButton.PRIMARY}>

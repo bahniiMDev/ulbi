@@ -1,16 +1,8 @@
 {
-  "Welcome to React": "Welcome to React",
   "Translate": "Translate",
   "Timer": "Timer",
   "Reports": "Reports",
-  "open": "open",
-  "close": "close",
-  "dark": "dark",
-  "light": "light",
-  "lang": "lang",
   "Settings": "Settings",
-  "default": "default",
-  "purple": "purple",
   "BET": "BET",
   "STREAM": "STREAM",
   "diamond": "diamond",
@@ -19,5 +11,5 @@
   "Rewards": "Rewards",
   "Bobby Kinsman": "Bobby Kinsman",
   "avatar": "avatar",
-  "daw": "daw"
+  "Not found page": "Not found page"
 }

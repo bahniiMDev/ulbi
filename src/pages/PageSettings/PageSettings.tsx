@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import cls from './PageSettings.module.scss';
 
 function PageSettings() {
-  const { t } = useTranslation('reports');
+  const { t } = useTranslation('settings');
   const [active, setActive] = useState(false);
 
   return (
@@ -20,7 +20,6 @@ function PageSettings() {
         }}
         className={cls.btn_setter}
       >
-        {' '}
         {active ? t('close') : t('open')}
       </ButtonApp>
     </div>

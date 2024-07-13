@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 import cls from './SwitcherLang.module.scss';
 
 type SwitcherLangProps = {
-	className?: string;
+    className?: string;
 };
 
 export function SwitcherLang({ className }: SwitcherLangProps) {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('settings');
 
   const switchLang = () => {
     i18n.changeLanguage(i18n.language === 'ua'
@@ -23,7 +23,9 @@ export function SwitcherLang({ className }: SwitcherLangProps) {
       className={cls.switcher}
     >
       {t('lang')}
+      {' '}
       :
+      &nbsp;
       {aLanguage}
     </ButtonApp>
   );
