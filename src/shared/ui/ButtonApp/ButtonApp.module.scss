@@ -1,0 +1,16 @@
+.common {
+  background-color: var(--bg-color-item-dark);
+}
+.primary {
+  background: var(--primary-color);
+  border-radius: 8px;
+}
+.btn_app {
+  padding: 15px;
+  color: var(--text-color-primary);
+  border-radius: 8px;
+  margin: 2px;
+  border: none;
+  display: flex;
+  background: var(--blue);
+}

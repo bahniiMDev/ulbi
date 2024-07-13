@@ -1,0 +1,62 @@
+.user_info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 48px 0;
+  justify-content: center;
+}
+.avatar {
+  overflow: hidden;
+  width: 84px;
+  z-index: 10;
+  background-color: var(--blue);
+  border-radius: 18px;
+  border: 1px solid var(--white);
+}
+.nick {
+  color: var(--theme-text-white);
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.stats {
+  width: 100%;
+  display: flex;
+  margin-top: 16px;
+  position: relative;
+  justify-content: center;
+}
+.stats::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 1px;
+  background-color: var(--theme-gray);
+}
+.stats_block {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--theme-gray);
+}
+.count {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
+.count_block {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stats_icon {
+  height: 18px;
+}
