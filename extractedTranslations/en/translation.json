@@ -1,12 +1,27 @@
 {
+  "BET": "BET",
+  "Bobby Kinsman": "Bobby Kinsman",
+  "Loading": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Page Reports": "Page Reports",
   "Page Timer": "Page Timer",
   "Reports": "Reports",
+  "Rewards": "Rewards",
+  "STREAM": "STREAM",
   "Settings": "Settings",
   "Timer": "Timer",
+  "Wins": "Wins",
+  "avatar": "avatar",
   "close": "close",
+  "crown": "crown",
   "dark": "dark",
   "default": "default",
+  "diamond": "diamond",
   "dwdw1231a": "dwdw1231a",
   "dwdw321321a": "dwdw321321a",
   "dwdw3213вфц21a": "dwdw3213вфц21a",
@@ -14,13 +29,5 @@
   "lang": "lang",
   "light": "light",
   "open": "open",
-  "purple": "purple",
-  "BET": "BET",
-  "STREAM": "STREAM",
-  "diamond": "diamond",
-  "crown": "crown",
-  "Wins": "Wins",
-  "Rewards": "Rewards",
-  "Bobby Kinsman": "Bobby Kinsman",
-  "avatar": "avatar"
+  "purple": "purple"
 }
