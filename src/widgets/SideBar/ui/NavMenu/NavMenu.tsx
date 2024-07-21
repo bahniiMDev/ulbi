@@ -11,9 +11,9 @@ export function NavMenu({ className }: NavMenuProps) {
   const { t } = useTranslation();
   return (
     <nav className={ClassNames(cls.nav_menu, {}, [className])}>
-      <LinkApp to="/" className={cls.nav_item} type={LinkType.NAV}>{t('Timer')}</LinkApp>
-      <LinkApp to="/reports" className={cls.nav_item} type={LinkType.NAV}>{t('Reports')}</LinkApp>
-      <LinkApp to="/settings" className={cls.nav_item} type={LinkType.NAV}>{t('Settings')}</LinkApp>
+      {/* <LinkApp to="/" className={cls.nav_item} type={LinkType.NAV}>{t('Timer')}</LinkApp> */}
+      {/* <LinkApp to="/reports" className={cls.nav_item} type={LinkType.NAV}>{t('Reports')}</LinkApp> */}
+      {/* <LinkApp to="/settings" className={cls.nav_item} type={LinkType.NAV}>{t('Settings')}</LinkApp> */}
     </nav>
   );
 }

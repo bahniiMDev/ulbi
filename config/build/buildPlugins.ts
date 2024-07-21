@@ -2,6 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack, { ProgressPlugin, WebpackPluginInstance } from 'webpack';
 import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 
 export default function buildPlugins(options: BuildOptions): WebpackPluginInstance[] {
@@ -9,7 +10,9 @@ export default function buildPlugins(options: BuildOptions): WebpackPluginInstan
     new HtmlWebpackPlugin({
       template: options.paths.html
     }),
-
+    new BundleAnalyzerPlugin({
+      openAnalyzer: false
+    }),
     new ProgressPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',

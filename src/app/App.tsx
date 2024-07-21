@@ -4,9 +4,12 @@ import { RouterPages } from 'app/providers/routing';
 import { NavBar } from 'widgets/Navbar';
 import { ClassNames } from 'shared/lib/ClassNames';
 import { SideBar } from 'widgets/SideBar';
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 
 export function App() {
+  // useEffect(() => {
+  //   throw new Error();
+  // }, []);
   const { theme } = useThemeContext();
   const classApp = ClassNames('app', {}, [theme]);
   return (

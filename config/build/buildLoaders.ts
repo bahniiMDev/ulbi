@@ -52,7 +52,7 @@ export default function buildLoaders(isDev: boolean): RuleSetRule[] {
           [
             'i18next-extract',
             {
-              locales: ['ua', 'en'],
+              locales: ['uk', 'en'],
               keyAsDefaultValue: true
             }
           ]

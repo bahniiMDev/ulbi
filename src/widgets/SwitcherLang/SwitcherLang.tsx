@@ -10,9 +10,9 @@ type SwitcherLangProps = {
 export function SwitcherLang({ className }: SwitcherLangProps) {
   const { t, i18n } = useTranslation('settings');
 
-  const switchLang = () => {
-    i18n.changeLanguage(i18n.language === 'ua'
-      ? 'en' : 'ua');
+  const switchLang = async () => {
+    i18n.changeLanguage(i18n.language === 'uk'
+      ? 'en' : 'uk');
   };
 
   const aLanguage = i18n.language === 'en' ? 'English' : 'Український';

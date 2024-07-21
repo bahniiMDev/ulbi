@@ -1,7 +1,5 @@
 {
-  "close": "close",
   "lang": "lang",
   "default": "default",
-  "purple": "purple",
-  "open": "open"
+  "purple": "purple"
 }

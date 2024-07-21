@@ -20,6 +20,13 @@ export default function templateWebpackConfig(
       clean: true
     },
     devtool: options.isDev ? 'inline-source-map' : undefined,
-    devServer: options.isDev ? buildDevServer(options) : undefined
+    devServer: options.isDev ? buildDevServer(options) : undefined,
+    performance: {
+      hints: false,
+
+      // або можна налаштувати порогові значення для розміру активів
+      maxAssetSize: 512000, // 500 KiB
+      maxEntrypointSize: 512000 // 500 KiB
+    }
   };
 }

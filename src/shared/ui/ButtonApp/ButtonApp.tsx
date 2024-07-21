@@ -18,7 +18,12 @@ export const ButtonApp: FC<ButtonAppProps> = props => {
     className, children, onClick, theme = ThemeButton.COMMON, ...other
   } = props;
   return (
-    <button type="button" className={ClassNames(cls.btn_app, {}, [cls.btn_app, className, cls[theme]])} onClick={onClick} {...other}>
+    <button
+      type="button"
+      className={ClassNames(cls.btn_app, {}, [cls.btn_app, className, cls[theme]])}
+      onClick={onClick}
+      {...other}
+    >
       {children}
     </button>
   );

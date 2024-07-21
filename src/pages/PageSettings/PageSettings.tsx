@@ -6,22 +6,11 @@ import React, { useState } from 'react';
 import cls from './PageSettings.module.scss';
 
 function PageSettings() {
-  const { t } = useTranslation('settings');
-  const [active, setActive] = useState(false);
-
   return (
     <div className={cls.switchers}>
       <ThemeSwitcher />
       <SwitcherLang />
 
-      <ButtonApp
-        onClick={() => {
-          setActive(prev => !prev);
-        }}
-        className={cls.btn_setter}
-      >
-        {active ? t('close') : t('open')}
-      </ButtonApp>
     </div>
   );
 }

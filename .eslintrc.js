@@ -47,7 +47,9 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'comma-dangle': ['error', 'never'],
     'arrow-parens': ['error', 'as-needed'],
-    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to'] }]
+    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to', 'data-testid'] }],
+    'max-len': [1, { ignoreComments: true, code: 100 }]
+    // 'eslint-disable-next-line': 0
   },
   globals: {
     __IS_DEV__: true
