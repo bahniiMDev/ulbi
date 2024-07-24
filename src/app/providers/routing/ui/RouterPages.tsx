@@ -8,6 +8,7 @@ function RouterPages() {
     <Suspense fallback={<PageLoader />}>
       <Routes>
         {routingConfig.map(obj => (
+          // eslint-disable-next-line react/jsx-props-no-spreading
           <Route {...obj} key={obj.path} />
         ))}
       </Routes>

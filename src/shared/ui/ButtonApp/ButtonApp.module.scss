@@ -1,16 +1,14 @@
 .common {
-  background-color: var(--bg-color-item-dark);
+  background-color: transparent;
+  border: 2px solid var(--theme-gray);
 }
 .primary {
-  background: var(--primary-color);
+  background: var(--theme-primary);
   border-radius: 8px;
 }
 .btn_app {
   padding: 15px;
-  color: var(--text-color-primary);
-  border-radius: 8px;
+  color: var(--theme-text-white);
   margin: 2px;
   border: none;
-  display: flex;
-  background: var(--blue);
 }

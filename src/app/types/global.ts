@@ -9,4 +9,5 @@ declare module '*.svg';
 declare module '*.jpeg';
 declare module '*.jpg';
 
+// eslint-disable-next-line no-unused-vars
 declare const __IS_DEV__: boolean;

@@ -13,5 +13,8 @@
   "avatar": "avatar",
   "Not found page": "Not found page",
   "open": "open",
-  "close": "close"
+  "close": "close",
+  "Something went wrong": {
+    "": "Something went wrong."
+  }
 }

@@ -3,7 +3,7 @@
 // const webpack = require('webpack')
 
 import path from 'path';
-import webpack, { Configuration } from 'webpack';
+import { Configuration } from 'webpack';
 import templateWebpackConfig from './config/build/templateWebpackConfig';
 import { BuildEnv, BuildPaths } from './config/build/types/config';
 

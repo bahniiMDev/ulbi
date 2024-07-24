@@ -4,7 +4,7 @@ import { RouterPages } from 'app/providers/routing';
 import { NavBar } from 'widgets/Navbar';
 import { ClassNames } from 'shared/lib/ClassNames';
 import { SideBar } from 'widgets/SideBar';
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense } from 'react';
 
 export function App() {
   // useEffect(() => {

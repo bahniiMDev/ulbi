@@ -4,6 +4,7 @@ import { Link, type LinkProps, NavLink } from 'react-router-dom';
 import cls from './LinkApp.module.scss';
 
 export enum LinkType {
+    // eslint-disable-next-line no-unused-vars
     NAV = 'nav',
 }
 export enum LinkTheme {
@@ -20,6 +21,7 @@ export const LinkApp: FC<LinkAppProps> = props => {
   } = props;
   return (
     type !== LinkType.NAV ? (
+    /* eslint-disable-next-line react/jsx-props-no-spreading */
       <Link to={to} className={ClassNames(cls.link, {}, [className, cls[theme]])} {...other}>
         {children}
       </Link>
@@ -31,6 +33,7 @@ export const LinkApp: FC<LinkAppProps> = props => {
           { [cls.active]: isActive },
           [className, cls[theme]]
         )}
+        /* eslint-disable-next-line react/jsx-props-no-spreading */
         {...other}
       >
         {children}

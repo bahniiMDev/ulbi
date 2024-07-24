@@ -3,11 +3,15 @@ import { ClassNames } from 'shared/lib/ClassNames';
 import cls from './ButtonApp.module.scss';
 
 export enum ThemeButton {
+    // eslint-disable-next-line no-unused-vars
 	COMMON = 'common',
+    // eslint-disable-next-line no-unused-vars
 	PRIMARY = 'primary',
+    // eslint-disable-next-line no-unused-vars
+    SECONDARY = 'secondary'
 }
 
-type ButtonAppProps = {
+export type ButtonAppProps = {
 	className?: string;
 	onClick?: () => void;
 	theme?: ThemeButton;
@@ -22,6 +26,7 @@ export const ButtonApp: FC<ButtonAppProps> = props => {
       type="button"
       className={ClassNames(cls.btn_app, {}, [cls.btn_app, className, cls[theme]])}
       onClick={onClick}
+      /* eslint-disable-next-line react/jsx-props-no-spreading */
       {...other}
     >
       {children}

@@ -10,6 +10,6 @@ describe('ButtonApp', () => {
   test('with param theme ', () => {
     render(<ButtonApp theme={ThemeButton.PRIMARY}>Test</ButtonApp>);
     expect(screen.getByText('Test')).toHaveClass('primary');
-    // screen.debug(null, 200);
+    screen.debug();
   });
 });

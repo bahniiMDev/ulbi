@@ -3,11 +3,7 @@ import { ButtonApp, ThemeButton } from 'shared/ui/ButtonApp/ButtonApp';
 import { useTranslation } from 'react-i18next';
 import cls from './SwitcherLang.module.scss';
 
-type SwitcherLangProps = {
-    className?: string;
-};
-
-export function SwitcherLang({ className }: SwitcherLangProps) {
+export function SwitcherLang() {
   const { t, i18n } = useTranslation('settings');
 
   const switchLang = async () => {

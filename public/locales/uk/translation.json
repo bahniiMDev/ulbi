@@ -13,5 +13,8 @@
   "avatar": "аватар",
   "Not found page": "Сторінка не знайдена",
   "open": "відкрити",
-  "close": "закрити"
+  "close": "закрити",
+  "Something went wrong": {
+    "": "Something went wrong."
+  }
 }

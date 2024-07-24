@@ -1,11 +1,12 @@
 .sidebar {
   //width: var(--width-sidebar-small);
-  width: var(--width-sidebar-big);
+  width: var(--width-sidebar-small);
   min-height: 100dvh;
   display: flex;
   transition: width 0.25s ease, background-color 0.5s ease;
   position: relative;
-  flex-direction: column;
+  align-items: flex-start;
+  flex-direction:column;
   box-shadow: 1px 0 0 0 var(--theme-gray);
   padding-bottom: 16px;
 }
@@ -13,10 +14,12 @@
   width: var(--width-sidebar-big);
 }
 .btn_setter {
-  max-width: 100%;
-  width: 52px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  //max-width: 100%;
+  //width: 80%;
+  padding: 20px 40px;
+  align-self: center;
+  border-radius: 20px;
+  //display: inline-flex;
+  //justify-content: center;
   background-color: var(--primary-color);
 }
