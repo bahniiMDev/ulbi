@@ -10,7 +10,7 @@ export function App() {
   const { theme } = useThemeContext();
   const classApp = ClassNames('app', {}, [theme]);
   return (
-    <div className="classApp">
+    <div className={classApp}>
       <Suspense fallback="">
         <SideBar />
         <div className="content">

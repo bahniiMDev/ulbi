@@ -18,8 +18,8 @@ export function SideBar({ className }: SideBarProps) {
   return (
     <div data-testid="sidebar" className={ClassNames(cls.sidebar, { [cls.big]: active }, [className])}>
       <Logo />
-      {/* <UserInfo /> */}
-      {/* <NavMenu /> */}
+      <UserInfo />
+      <NavMenu />
       <ButtonApp
         data-testid="toggle"
         onClick={() => {
