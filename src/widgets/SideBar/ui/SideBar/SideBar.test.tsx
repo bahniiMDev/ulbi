@@ -15,4 +15,5 @@ describe('SideBar', () => {
     fireEvent.click(toggleBtn);
     expect(screen.getByTestId('sidebar')).toHaveClass('big');
   });
+  // screen.debug(null, 20000000);
 });

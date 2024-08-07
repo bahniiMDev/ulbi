@@ -37,7 +37,7 @@ export default {
     // '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
     //     '<rootDir>/__mocks__/fileMock.js',
     '\\.(s?css)$': 'identity-obj-proxy',
-    '\\.png': path.resolve(__dirname, 'emptyComponent.tsx'),
+    // '\\.png': path.resolve(__dirname, 'emptyComponent.tsx'),
     '\\.svg': path.resolve(__dirname, 'emptyComponent.tsx')
   },
   // An array of directory names to be searched recursively up from the requiring module's location
@@ -51,7 +51,9 @@ export default {
   rootDir: '../../',
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/config/jest/setupTests.ts']
-
+  // transform: {
+  //   '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/config/jest/fileTransformer.js'
+  // }
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
