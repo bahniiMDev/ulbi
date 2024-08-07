@@ -5,8 +5,22 @@
 }
 .active {
   background: rgb(8 136 210);
-  background: linear-gradient(90deg, color-mix(in srgb, var(--theme-primary), #0000 50%) 0%, color-mix(in srgb, var(--theme-primary), #0000 100%) 100%);
-  filter: progid:dximagetransform.microsoft.gradient(startcolorstr=var(--theme-primary), endcolorstr=var(--theme-primary), gradienttype=1);
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--theme-primary), #0000 50%) 0%,
+      color-mix(
+        in srgb,
+        var(--theme-primary),
+        #0000 100%
+      ) 100%
+    );
+  filter:
+    progid:dximagetransform.microsoft.gradient(
+      startcolorstr=var(--theme-primary),
+      endcolorstr=var(--theme-primary),
+      gradienttype=1
+    );
   transition: background-color ease 0.2s;
   color: var(--theme-text-white);
   position: relative;

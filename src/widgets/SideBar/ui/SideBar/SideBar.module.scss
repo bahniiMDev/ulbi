@@ -6,7 +6,7 @@
   transition: width 0.25s ease, background-color 0.5s ease;
   position: relative;
   align-items: flex-start;
-  flex-direction:column;
+  flex-direction: column;
   box-shadow: 1px 0 0 0 var(--theme-gray);
   padding-bottom: 16px;
 }
@@ -19,6 +19,7 @@
   padding: 20px 40px;
   align-self: center;
   border-radius: 20px;
+
   //display: inline-flex;
   //justify-content: center;
   background-color: var(--primary-color);
