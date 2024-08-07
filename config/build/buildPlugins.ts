@@ -6,13 +6,11 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 
 export default function buildPlugins(options: BuildOptions): WebpackPluginInstance[] {
-  return [
+  const plugins = [
     new HtmlWebpackPlugin({
       template: options.paths.html
     }),
-    new BundleAnalyzerPlugin({
-      openAnalyzer: false
-    }),
+
     new ProgressPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
@@ -23,6 +21,15 @@ export default function buildPlugins(options: BuildOptions): WebpackPluginInstan
     }),
     new webpack.HotModuleReplacementPlugin(),
     new ReactRefreshPlugin()
-
   ];
+  if (options.isDev) {
+    plugins.push(new BundleAnalyzerPlugin({
+      openAnalyzer: false
+    }));
+    plugins.push(
+      new webpack.HotModuleReplacementPlugin()
+    );
+  }
+
+  return plugins;
 }
