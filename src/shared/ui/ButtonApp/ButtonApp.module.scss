@@ -1,14 +1,22 @@
-.common {
-  background-color: transparent;
-  border: 2px solid var(--theme-gray);
-}
-.primary {
-  background: var(--theme-primary);
-  border-radius: 8px;
-}
 .btn_app {
-  padding: 15px;
-  color: var(--theme-text-white);
+  padding: 5px;
   margin: 2px;
   border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.primary {
+  color: var(--theme-bg);
+  background: var(--theme-primary);
+}
+.secondary {
+  background-color: var(--theme-bg-block);
+  color: var(--theme-primary);
+}
+.outline {
+  border: 2px solid var(--theme-primary);
+  color: var(--theme-primary);
+  background: transparent;
 }

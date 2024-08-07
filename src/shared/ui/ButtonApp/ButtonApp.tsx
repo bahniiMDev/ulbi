@@ -4,7 +4,7 @@ import cls from './ButtonApp.module.scss';
 
 export enum ThemeButton {
     // eslint-disable-next-line no-unused-vars
-	COMMON = 'common',
+	OUTLINE = 'outline',
     // eslint-disable-next-line no-unused-vars
 	PRIMARY = 'primary',
     // eslint-disable-next-line no-unused-vars
@@ -19,7 +19,7 @@ export type ButtonAppProps = {
 
 export const ButtonApp: FC<ButtonAppProps> = props => {
   const {
-    className, children, onClick, theme = ThemeButton.COMMON, ...other
+    className, children, onClick, theme = ThemeButton.OUTLINE, ...other
   } = props;
   return (
     <button

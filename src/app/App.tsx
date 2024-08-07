@@ -7,9 +7,6 @@ import { SideBar } from 'widgets/SideBar';
 import React, { Suspense } from 'react';
 
 export function App() {
-  // useEffect(() => {
-  //   throw new Error();
-  // }, []);
   const { theme } = useThemeContext();
   const classApp = ClassNames('app', {}, [theme]);
   return (
