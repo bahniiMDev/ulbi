@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ClassNames } from 'shared/lib/ClassNames';
 import { useTranslation } from 'react-i18next';
 import { Logo } from 'widgets/SideBar/ui/Logo/Logo';
-import { ButtonApp } from 'shared/ui/ButtonApp/ButtonApp';
+import { ButtonApp, ThemeButton } from 'shared/ui/ButtonApp/ButtonApp';
 import { NavMenu } from 'widgets/SideBar/ui/NavMenu/NavMenu';
 import { UserInfo } from 'widgets/SideBar/ui/UserInfo/UserInfo';
 import cls from './SideBar.module.scss';
@@ -25,9 +25,11 @@ export function SideBar({ className }: SideBarProps) {
         onClick={() => {
           setActive(prev => !prev);
         }}
-        className={cls.btn_setter}
+        className={cls.btn_toggle}
+        theme={ThemeButton.TOGGLE}
+        square
       >
-        {active ? t('close') : t('open')}
+        {active ? t('<') : t('>')}
       </ButtonApp>
     </div>
   );

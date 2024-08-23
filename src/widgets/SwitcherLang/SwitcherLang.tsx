@@ -1,9 +1,13 @@
 import React from 'react';
 import { ButtonApp, ThemeButton } from 'shared/ui/ButtonApp/ButtonApp';
 import { useTranslation } from 'react-i18next';
-import cls from './SwitcherLang.module.scss';
+// import cls from './SwitcherLang.module.scss';
 
-export function SwitcherLang() {
+type SwitcherLangProps = {
+  className?: string;
+}
+
+export function SwitcherLang({ className }: SwitcherLangProps) {
   const { t, i18n } = useTranslation('settings');
 
   const switchLang = async () => {
@@ -13,15 +17,7 @@ export function SwitcherLang() {
 
   const aLanguage = i18n.language === 'en' ? 'English' : 'Український';
   return (
-    <ButtonApp
-      onClick={switchLang}
-      theme={ThemeButton.PRIMARY}
-      className={cls.switcher}
-    >
-      {t('lang')}
-      {' '}
-      :
-      &nbsp;
+    <ButtonApp className={className} onClick={switchLang} theme={ThemeButton.PRIMARY}>
       {aLanguage}
     </ButtonApp>
   );

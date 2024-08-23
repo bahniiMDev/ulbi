@@ -52,3 +52,16 @@ OutlineLight.args = {
   theme: ThemeButton.OUTLINE
 };
 OutlineLight.decorators = [ThemeDecorator(Theme.PURPLE)];
+
+export const ToggleDefault = Template.bind({});
+ToggleDefault.args = {
+  children: '>',
+  theme: ThemeButton.TOGGLE
+};
+
+export const ToggleLight = Template.bind({});
+ToggleLight.args = {
+  children: '>',
+  theme: ThemeButton.TOGGLE
+};
+ToggleLight.decorators = [ThemeDecorator(Theme.PURPLE)];
