@@ -47,8 +47,11 @@
   --black-light: #1a1e2d;
   --white: #fff;
   --gray: #64646a;
-
-  //sizes
+  --overlay: rgb(0 0 0 / 50%);
   --width-sidebar-small: 200px;
   --width-sidebar-big: 400px;
+
+  //z-indexes
+
+  --modal-z: 10;
 }

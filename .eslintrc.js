@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     jest: true
   },
-  extends: ['airbnb', 'plugin:react/recommended', 'plugin:i18next/recommended'],
+  extends: ['airbnb', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:i18next/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -16,7 +16,8 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
-    'i18next'
+    'i18next',
+    'react-hooks'
   ],
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx']
@@ -44,7 +45,11 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'arrow-parens': ['error', 'as-needed'],
     'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to', 'data-testid'] }],
-    'max-len': [1, { ignoreComments: true, code: 150 }]
+    'max-len': [1, { ignoreComments: true, code: 150 }],
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error'
   },
   globals: {
     __IS_DEV__: true

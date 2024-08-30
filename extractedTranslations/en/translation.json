@@ -4,6 +4,7 @@
   ">": ">",
   "BET": "BET",
   "Bobby Kinsman": "Bobby Kinsman",
+  "Log in": "Log in",
   "Not found page": "Not found page",
   "Page Reports": "Page Reports",
   "Page Timer": "Page Timer",
@@ -22,5 +23,6 @@
   "default": "default",
   "diamond": "diamond",
   "open": "open",
-  "purple": "purple"
+  "purple": "purple",
+  "s": "s"
 }

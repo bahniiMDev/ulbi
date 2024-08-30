@@ -1,10 +1,10 @@
-import 'app/styles/index.scss';
 import { useThemeContext } from 'app/providers/ThemeProvider';
 import { RouterPages } from 'app/providers/routing';
 import { NavBar } from 'widgets/Navbar';
 import { ClassNames } from 'shared/lib/ClassNames';
 import { SideBar } from 'widgets/SideBar';
 import React, { Suspense } from 'react';
+import { Modal } from 'shared/ui/Modal/Modal';
 
 export function App() {
   const { theme } = useThemeContext();

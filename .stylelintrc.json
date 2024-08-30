@@ -5,6 +5,7 @@
    "rule-empty-line-before": "never-multi-line",
    "unit-no-unknown": null,
    "selector-class-pattern": null,
-   "scss/double-slash-comment-whitespace-inside": null
+   "scss/double-slash-comment-whitespace-inside": null,
+   "property-no-vendor-prefix": null
  }
 }
